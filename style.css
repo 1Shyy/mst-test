@@ -1,0 +1,442 @@
+@font-face {
+    font-family: 'Prata';
+    src: url('./fonts/Prata-Regular.ttf');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #fff;
+    background-color: #282829;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.4s;
+}
+
+.header-back {
+    background-color: #131313;
+}
+
+.navbar {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar div {
+    font-size: 28px;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    margin: auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 29px;
+    text-transform: uppercase;
+}
+
+.navbar li {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.navbar li:hover {
+    color: rgba(252, 170, 19, 0.87)
+}
+
+.about-us {
+    display: flex;
+    background: url('./img/mansion1.webp') no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-color: #222;
+    width: 100%;
+    height: 900px;
+}
+
+.text-about {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+}
+
+.text-about div{
+    max-width: 600px;
+}
+
+.text-about h1 {
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.text-about p {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.text-about button {
+    margin-top: 50px;
+    border: none;
+    padding: 32px 52px;
+    cursor: pointer;
+    font-size: 26px;
+    font-weight: 600;
+    color: #222;
+    transition: all 0.3s;
+}
+
+.text-about button:hover {
+    background-color: rgba(252, 170, 19, 0.87);
+    color: #D5C9BE;
+}
+
+.advantages {
+    margin-top: 100px;
+    width: 100%;
+    height: 724px;
+    display: flex;
+}
+
+.advantages img {
+    width: 30%; 
+}
+.advantages div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.advantages ul {
+    list-style-type: none;
+    font-size: 20px;
+    width: 90%;
+}
+.advantages li:nth-child(1) {
+    padding-top: 10px;
+}
+
+.adv-img {
+    width: 58px;
+    height: 47px;
+}
+
+.advantages li {
+    border-bottom: 1px solid #55565A;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+}
+
+.advantages button {
+    width: 90%;
+    border: none;
+    color: #222;
+    padding: 22px 0;
+    cursor: pointer;
+    font-size: 26px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.advantages button:hover {
+    background-color: rgba(252, 170, 19, 0.87);
+    color: #D5C9BE;
+}
+
+.offer {
+    display: flex;
+    align-items: center;
+    margin: 100px auto;
+    max-width: 1280px;
+    width: 100%;
+    padding: 40px 20px;
+    border-radius: 25px;
+    background: url('./img/offer.jpeg') no-repeat right;
+    background-size: contain;
+    background-color: #fff;
+    color: #222;
+}
+
+.offer-content {
+    width: 50%;
+    margin: 0 100px;
+}
+
+.offer-content h2 {
+    font-size: 54px;
+    font-weight: 500;
+    font-family: 'Prata', sans-serif;
+    color: #38535D;
+    margin-bottom: 45px;
+}
+
+.offer-content input[type=text],
+.offer-content input[type=email]{
+    max-width: 728px;
+    width: 100%;
+    height: 65px;
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+    padding: 0 38px;
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.input-checkbox {
+    display: flex;
+    align-items: center;
+    margin: 26px 0;
+}
+
+.offer-content input[type=checkbox] {
+    width: 24px;
+    height: 24px;
+}
+
+.offer-content label {
+    margin-left: 16px;
+    font-size: 19px;
+}
+
+.offer-content a {
+    color: #222;
+}
+
+.offer-content button {
+    max-width: 728px;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #282829;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.offer-content button:hover {
+    background-color: rgba(252, 170, 19, 0.87);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+}
+
+.footer-nav {
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid #D5C9BE;
+    border-bottom: 1px solid #D5C9BE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav ul {
+    margin: auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 29px;
+    text-transform: uppercase;
+}
+
+.footer-nav li {
+    font-style: italic;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.footer-nav li:hover {
+    color: rgba(252, 170, 19, 0.87)
+}
+
+.footer-content {
+    max-width: 1280px;
+    width: 100%;
+    margin: 52px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content a {
+    color: #D5C9BE;
+}
+
+.footer-name,
+.footer-social,
+.footer-order {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-name {
+    align-items: start;
+}
+
+.footer-social {
+    align-items: center;
+}
+
+.footer-order {
+    align-items: end;
+}
+
+.footer-order button {
+    font-size: 24px;
+    background-color: #fff;
+    color: #222;
+    border: none;
+    border-radius: 4px;
+    font-style: italic;
+    padding: 20px 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.footer-order button:hover {
+    background-color: rgba(252, 170, 19, 0.87);
+    color: #D5C9BE;
+}
+
+a {
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: rgba(252, 170, 19, 0.87)
+}
+
+@media (max-width: 1250px) {
+    header {
+        background-color: #131313;
+    }
+    .navbar {
+        width: 90%;
+    }
+    .about-us {
+        background-size: cover;
+    }
+    .text-about {
+        width: 90%;
+    }
+    .text-about h1 {
+        font-size: 48px;
+    }
+    .text-about p {
+        font-size: 24px;
+    }
+    .advantages ul {
+        font-size: 18px;
+    }
+    .offer {
+        background-image: none ;
+        width: 90%;
+    }
+    .offer-content {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .offer-content h2 {
+        text-align: center;
+    }
+}
+@media (max-width: 1000px) {
+    .advantages {
+        max-width: 1280px;
+        width: 90%;
+        margin: 100px auto;
+        display: flex;
+        justify-content: center;
+    }
+    .advantages div {
+        width: 100%;
+    }
+    .mansion-img {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .navbar {
+        justify-content: center;
+    }
+    .navbar div {
+        display: none;
+    }
+    .advantages ul {
+        font-size: 16px;
+    }
+    .offer-content h2 {
+        font-size: 40px;
+    }
+    .footer-content {
+        flex-direction: column;
+        width: 90%;
+    }
+    .footer-name,
+    .footer-order,
+    .footer-social {
+        height: 80px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-content h2 {
+        font-size: 24px;
+    }
+    .footer-content p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 420px) {
+    .navbar {
+        margin: 0;
+    }
+    .navbar ul {
+        font-size: 12px;
+    }
+    .advantages ul {
+        font-size: 14px;
+    }
+    .offer-content h2 {
+        font-size: 32px;
+    }
+    .footer-nav ul {
+        font-size: 16px;
+    }
+    .footer-social p {
+        text-align: end;
+    }
+}
