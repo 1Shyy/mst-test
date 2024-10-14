@@ -5,4 +5,4 @@ window.addEventListener('scroll', function () {
     } else {
         this.document.getElementById('header').classList.remove("header-back")
     }
-  });
+});
